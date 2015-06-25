@@ -2,6 +2,51 @@
   width: 300px;
 }
 
-#cart {
+#cart h1 {
+  text-transform: uppercase;
+}
 
+#cart ul {
+  list-style-type:none;
+  border-top: 1px black solid;
+  padding: 0;
+}
+
+#cart li {
+  border-bottom: 1px black solid;
+  padding: 10px 0;
+  width: 100%;
+  position:relative;
+}
+
+#cart li:last-child {
+  border-bottom:none;
+}
+
+#cart .checkoutbutton {
+  background: #3399ff;
+  color:white;
+  width: 100%;
+  border: none;
+  font-size:1.6em;
+}
+
+#cart .buttonx {
+  color: white;
+  background:#989898;
+  border-radius: 50%;
+  border:none;
+/*O que se segue só funciona graças ao position:relative; no #cart li*/
+  position: absolute;
+  right:0;
+  top: 28%;
+/* O top poderia ficar em 50%, mas teria que se escrever a seguir: transform: translateY(50%);*/
+}
+
+#cart .total {
+  float:right;
+}
+
+#cart .quantity {
+  color: #969696;
 }
